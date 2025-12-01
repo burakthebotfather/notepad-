@@ -47,7 +47,7 @@ async def process_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 async def main():
-    app = ApplicationBuilder().token(os.getenv("BOT_TOKEN")).build()
+    app = ApplicationBuilder().token(os.getenv("8571308851:AAHLvJYGXIfCbiYrrGJKGVCzI09XHeTQwlI")).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, process_message))
     await app.run_polling()
 
